@@ -35,9 +35,8 @@ int2:
 cmp x, 150 ; х<150 ?
 ja int3 ; если x>150 перейти к метке int3
 ; вычисление 10-200/X
-mov ax, 200
+mov al, 200
 mov bl, x
-xor edx,edx
 div bl; al:=200/X
 mov bl, al 
 mov al, 10
@@ -46,8 +45,8 @@ jc osh ; если есть перенос - ошибка, перейти к ме
 jmp fin ; перейти к метке fin
 ; вычисление X+99
 int3:
-movzx ax, x
-add ax, 99 ; al:=X+99
+mov al, x
+add al, 99 ; al:=X+99
 jnc fin ; если флаг переноса не установлен перейти к fin
 osh: mov myerr, 1 ; установить код ошибки
 jmp exit ; перейти к метке exit
