@@ -14,7 +14,7 @@ include <\masm32\include\kernel32.inc>
 includelib <\masm32\lib\kernel32.lib>
 ;=========================================
 .data
-x db 151
+x db 0
 y db ?
 myerr db 0
 ;=========================================

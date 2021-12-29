@@ -1,4 +1,4 @@
-Microsoft (R) Macro Assembler Version 6.14.8444		    12/23/21 21:38:33
+Microsoft (R) Macro Assembler Version 6.14.8444		    12/29/21 14:40:28
 lab_2.asm						     Page 1 - 1
 
 
@@ -2225,7 +2225,7 @@ lab_2.asm						     Page 1 - 1
 				includelib <\masm32\lib\kernel32.lib>
 				;=========================================
  00000000			.data
- 00000000 97			x db 151
+ 00000000 00			x db 0
  00000001 00			y db ?
  00000002 00			myerr db 0
 				;=========================================
